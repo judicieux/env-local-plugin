@@ -17,7 +17,7 @@ func (EnvLocalHttpPlugin) GetVersion() (int, int, int) {
 func (EnvLocalHttpPlugin) GetRequests() []l9format.WebPluginRequest {
         return []l9format.WebPluginRequest{{
                 Method:  "GET",
-                Path:    "/.env.example",
+                Path:    "/.env.local",
                 Headers: map[string]string{},
                 Body:    []byte(""),
         }}
